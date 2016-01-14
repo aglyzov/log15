@@ -88,6 +88,7 @@ type Logger interface {
 	Warn(msg string, ctx ...interface{})
 	Error(msg string, ctx ...interface{})
 	Crit(msg string, ctx ...interface{})
+	Fatal(msg string, ctx ...interface{})
 }
 
 type logger struct {
