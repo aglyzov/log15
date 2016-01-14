@@ -1,5 +1,8 @@
 ![obligatory xkcd](http://imgs.xkcd.com/comics/standards.png)
 
+**NOTICE:** this is a fork of [inconshreveable/log15](http://github.com/inconshreveable/log15) which adds
+a traditional `.Fatal()` method to a logger.
+
 # log15 [![godoc reference](https://godoc.org/gopkg.in/inconshreveable/log15.v2?status.png)](https://godoc.org/gopkg.in/inconshreveable/log15.v2)
 
 Package log15 provides an opinionated, simple toolkit for best-practice logging in Go (golang) that is both human and machine readable. It is modeled after the Go standard library's [`io`](http://golang.org/pkg/io/) and [`net/http`](http://golang.org/pkg/net/http/) packages and is an alternative to the standard library's [`log`](http://golang.org/pkg/log/) package. 
@@ -19,7 +22,7 @@ The API of the master branch of log15 should always be considered unstable. Usin
 of the log15 package is supported by gopkg.in. Include your dependency like so:
 
 ```go
-import log "gopkg.in/inconshreveable/log15.v2"
+import log "github.com/aglyzov/log15"
 ```
 
 ## Examples
