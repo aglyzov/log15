@@ -145,6 +145,11 @@ func (l *logger) Crit(msg string, ctx ...interface{}) {
 	l.write(msg, LvlCrit, ctx)
 }
 
+func (l *logger) Fatal(msg string, ctx ...interface{}) {
+	l.write(msg, LvlCrit, ctx)
+	panic("Fatal error - abort")
+}
+
 func (l *logger) SetHandler(h Handler) {
 	l.h.Swap(h)
 }
